@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Plain net10.0: no MAUI workload / device needed, runs in ~1s. -->
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<RootNamespace>PlatiniumUI.Tests</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+		<PackageReference Include="xunit" Version="2.9.3" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.1.4">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<!--
+		Link the MAUI-independent globalization source directly from PlatiniumUI.Fluent so we test the
+		exact code the controls use, without referencing the multi-targeted MAUI library (which has no
+		bare net10.0 TFM). These files must stay free of Microsoft.Maui.* dependencies.
+	-->
+	<ItemGroup>
+		<Compile Include="..\PlatiniumUI.Fluent\DesignSystem\Globalization\**\*.cs" LinkBase="Linked\Globalization" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Fixtures\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
+</Project>

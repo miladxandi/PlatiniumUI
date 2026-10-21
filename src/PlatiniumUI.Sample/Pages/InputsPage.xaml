@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PlatiniumUI.Sample.Pages.InputsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fl="clr-namespace:PlatiniumUI.Fluent.Controls.Inputs;assembly=PlatiniumUI.Fluent"
+        xmlns:flm="clr-namespace:PlatiniumUI.Fluent.Controls.Miscellaneous;assembly=PlatiniumUI.Fluent"
+    Title="Inputs"
+    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+
+            <!-- Text Input -->
+            <Label Text="FlTextInput" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlTextInput Label="Full Name" Placeholder="Enter your name" />
+            <fl:FlTextInput Label="Email" Placeholder="email@example.com" Keyboard="Email" />
+            <fl:FlTextInput Label="With Helper" Placeholder="Type something" HelperText="This is helper text" />
+            <fl:FlTextInput Label="With Error" Placeholder="Invalid input" HasError="True" ErrorText="This field is required" />
+            <fl:FlTextInput Label="With Counter" Placeholder="Max 50 chars" MaxLength="50" />
+
+            <!-- Password -->
+            <Label Text="FlPasswordInput" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlPasswordInput Label="Password" Placeholder="Enter password" />
+            <fl:FlPasswordInput Label="Password (Error)" HasError="True" />
+
+            <!-- Numeric -->
+            <Label Text="FlNumericInput &amp; FlNumericUpDown" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlNumericInput Label="Amount" />
+            <fl:FlNumericUpDown Label="Quantity" Value="5" Minimum="0" Maximum="100" Step="1" />
+
+            <!-- OTP -->
+            <Label Text="FlOTPInput" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlOTPInput Length="6" />
+            <Label Text="Masked OTP:" FontSize="12" TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+            <fl:FlOTPInput Length="4" IsMasked="True" />
+
+            <!-- Search -->
+            <Label Text="FlSearchBar" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlSearchBar Placeholder="Search controls..." />
+
+            <!-- Date/Time Pickers -->
+            <Label Text="Date &amp; Time Pickers" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlDatePicker Label="Birth Date" />
+            <fl:FlJalaliDatePicker Label="تاریخ (جلالی)" />
+                        <Border Stroke="#E5E7EB" StrokeThickness="1" Padding="12" HeightRequest="320">
+                            <flm:FlJalaliCalendar />
+                        </Border>
+            <fl:FlTimePicker Label="Meeting Time" />
+            <fl:FlDateTimePicker Label="Event Date &amp; Time" />
+
+            <!-- Picker & AutoComplete -->
+            <Label Text="FlPicker &amp; FlAutoComplete" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlPicker x:Name="countryPicker" Label="Country" />
+            <fl:FlAutoComplete Label="City" Placeholder="Start typing..." />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

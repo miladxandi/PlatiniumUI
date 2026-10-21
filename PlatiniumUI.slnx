@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PlatiniumUI.Fluent/PlatiniumUI.Fluent.csproj" />
+    <Project Path="src/PlatiniumUI.Sample/PlatiniumUI.Sample.csproj" />
+    <Project Path="src/PlatiniumUI.Tests/PlatiniumUI.Tests.csproj" />
+  </Folder>
+</Solution>

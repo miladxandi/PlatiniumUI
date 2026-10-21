@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="PlatiniumUI.Sample.Pages.NavigationDemoPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:nav="clr-namespace:PlatiniumUI.Fluent.Controls.Navigation;assembly=PlatiniumUI.Fluent"
+    Title="Navigation" BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+            <Label Text="Navigation Controls" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <!-- Tab View -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Tab View" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <nav:FlTabView x:Name="tabView" HeightRequest="200">
+                    <nav:FlTabView.Tabs>
+                        <nav:FlTabItem Title="Home">
+                            <nav:FlTabItem.Content>
+                                <Label Text="Home Tab Content" Padding="16"
+                                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                            </nav:FlTabItem.Content>
+                        </nav:FlTabItem>
+                        <nav:FlTabItem Title="Profile">
+                            <nav:FlTabItem.Content>
+                                <Label Text="Profile Tab Content" Padding="16"
+                                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                            </nav:FlTabItem.Content>
+                        </nav:FlTabItem>
+                        <nav:FlTabItem Title="Settings">
+                            <nav:FlTabItem.Content>
+                                <Label Text="Settings Tab Content" Padding="16"
+                                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                            </nav:FlTabItem.Content>
+                        </nav:FlTabItem>
+                    </nav:FlTabView.Tabs>
+                </nav:FlTabView>
+            </VerticalStackLayout>
+
+            <!-- Breadcrumb -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Breadcrumb" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <nav:FlBreadcrumb x:Name="breadcrumb" />
+            </VerticalStackLayout>
+
+            <!-- Pagination -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Pagination" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <nav:FlPagination CurrentPage="3" TotalPages="10" />
+            </VerticalStackLayout>
+
+            <!-- Bottom Sheet Button -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Bottom Sheet" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <Button Text="Open Bottom Sheet" Clicked="OnOpenBottomSheet"
+                        BackgroundColor="{AppThemeBinding Light=#F26522, Dark=#F26522}"
+                        TextColor="White" CornerRadius="8" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

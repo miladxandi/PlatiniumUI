@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="PlatiniumUI.Sample.Pages.LayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:layout="clr-namespace:PlatiniumUI.Fluent.Controls.Layout;assembly=PlatiniumUI.Fluent"
+    Title="Layout" BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+            <Label Text="Layout Controls" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <!-- Card -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Card" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <layout:FlCard>
+                    <layout:FlCard.CardContent>
+                        <VerticalStackLayout Spacing="12">
+                            <Label Text="Card Header" FontSize="16" FontAttributes="Bold" />
+                            <Label Text="This is a Fluent Design card with elevation and rounded corners. Cards are used to group related content." />
+                            <HorizontalStackLayout Spacing="8">
+                                <Button Text="Action 1" />
+                                <Button Text="Action 2" />
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </layout:FlCard.CardContent>
+                </layout:FlCard>
+            </VerticalStackLayout>
+
+            <!-- Expander -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Expander" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <layout:FlExpander Header="Click to Expand">
+                    <layout:FlExpander.ExpanderContent>
+                        <VerticalStackLayout Spacing="8" Padding="0,8">
+                            <Label Text="This content is hidden by default and revealed when the expander is opened." />
+                            <Label Text="It supports smooth expand/collapse animations." />
+                        </VerticalStackLayout>
+                    </layout:FlExpander.ExpanderContent>
+                </layout:FlExpander>
+            </VerticalStackLayout>
+
+            <!-- Divider -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Divider" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <Label Text="Content above divider" />
+                <layout:FlDivider />
+                <Label Text="Content below divider" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

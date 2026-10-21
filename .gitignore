@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+build-output/
+build-output-release/
+TestResults/
+artifacts/
+
+# Local serving / packaged installers
+lan-serve/
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Signing material — never commit
+*.keystore
+*.jks
+keystore.properties

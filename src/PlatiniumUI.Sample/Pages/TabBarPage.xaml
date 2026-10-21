@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="PlatiniumUI.Sample.Pages.TabBarPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Tab Bar" BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+            <Label Text="FlTabBar Control" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <!-- Top Tab Bar (Pill Indicator) -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Top Position - Pill Indicator" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <ContentView x:Name="topTabBarContainer" HeightRequest="250" />
+            </VerticalStackLayout>
+
+            <!-- Bottom Tab Bar (Underline Indicator) -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Bottom Position - Underline Indicator" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <ContentView x:Name="bottomTabBarContainer" HeightRequest="250" />
+            </VerticalStackLayout>
+
+            <!-- Tab Bar with Badges -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="With Badges - Background Indicator" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <ContentView x:Name="badgeTabBarContainer" HeightRequest="250" />
+            </VerticalStackLayout>
+
+            <!-- Selection Info -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#F8F8F8, Dark=#252525}"
+                Padding="16">
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Selection Info" FontSize="14" FontAttributes="Bold"
+                           TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                    <Label x:Name="selectionInfoLabel" Text="Select a tab to see info here"
+                           FontSize="12"
+                           TextColor="{AppThemeBinding Light=#5C5C5C, Dark=#C4C4C4}" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

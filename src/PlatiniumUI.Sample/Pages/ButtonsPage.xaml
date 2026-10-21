@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PlatiniumUI.Sample.Pages.ButtonsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fl="clr-namespace:PlatiniumUI.Fluent.Controls.Buttons;assembly=PlatiniumUI.Fluent"
+    Title="Buttons &amp; Actions"
+    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+
+            <!-- Section: Primary Buttons -->
+            <Label Text="FlButton Variants" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12">
+                <fl:FlButton Text="Primary" Variant="Primary" />
+                <fl:FlButton Text="Secondary" Variant="Secondary" />
+                <fl:FlButton Text="Subtle" Variant="Subtle" />
+                <fl:FlButton Text="Danger" Variant="Danger" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Sizes -->
+            <Label Text="Sizes" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                <fl:FlButton Text="Small" Size="Small" Variant="Primary" />
+                <fl:FlButton Text="Medium" Size="Medium" Variant="Primary" />
+                <fl:FlButton Text="Large" Size="Large" Variant="Primary" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Icon Buttons -->
+            <Label Text="Icon Buttons" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12">
+                <fl:FlButton Text="Add" Icon="+" Variant="Primary" IconPosition="Left" />
+                <fl:FlButton Text="Settings" Icon="&#x2699;" Variant="Secondary" IconPosition="Left" />
+                <fl:FlButton Icon="+" Variant="Icon" />
+                <fl:FlButton Icon="&#x2715;" Variant="Icon" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Loading & Disabled -->
+            <Label Text="Loading &amp; Disabled States" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12">
+                <fl:FlButton Text="Loading..." Variant="Primary" IsLoading="True" />
+                <fl:FlButton Text="Disabled" Variant="Primary" IsEnabled="False" />
+                <fl:FlButton Text="Disabled" Variant="Secondary" IsEnabled="False" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Toggle Buttons -->
+            <Label Text="FlToggleButton" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12">
+                <fl:FlToggleButton Text="Option A" IsToggled="True" />
+                <fl:FlToggleButton Text="Option B" IsToggled="False" />
+                <fl:FlToggleButton Text="Option C" IsToggled="True" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Segmented Control -->
+            <Label Text="FlSegmentedControl" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlSegmentedControl x:Name="segmentedControl" SelectedIndex="0" />
+
+            <!-- Section: Split & Dropdown Buttons -->
+            <Label Text="FlSplitButton &amp; FlDropDownButton" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="12">
+                <fl:FlSplitButton Text="Submit" />
+                <fl:FlDropDownButton Text="Options" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Chips -->
+            <Label Text="FlChip" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <HorizontalStackLayout Spacing="8">
+                <fl:FlChip Text="Design" IsSelected="True" />
+                <fl:FlChip Text="MAUI" />
+                <fl:FlChip Text="Fluent" IsSelected="True" />
+                <fl:FlChip Text="Closable" IsClosable="True" />
+            </HorizontalStackLayout>
+
+            <!-- Section: Full Width -->
+            <Label Text="Full Width Button" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlButton Text="Full Width Primary" Variant="Primary" IsFullWidth="True" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

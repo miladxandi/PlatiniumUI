@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PlatiniumUI.Sample.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="PlatiniumUI Fluent"
+    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="16,24"
+            Spacing="12">
+
+            <!-- Header -->
+            <Label
+                Text="PlatiniumUI Fluent"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <Label
+                Text="A complete Fluent Design System for .NET MAUI"
+                FontSize="14"
+                TextColor="{AppThemeBinding Light=#5C5C5C, Dark=#C4C4C4}"
+                Margin="0,0,0,16" />
+
+            <!-- Buttons & Actions -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnButtonsTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x2728;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Buttons &amp; Actions" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlButton, FlToggleButton, FlChip, FlSegmentedControl"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Inputs -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnInputsTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x270F;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Inputs" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlTextInput, FlNumericInput, FlDatePicker, FlSearchBar"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Selection -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSelectionTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x2611;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Selection" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlCheckBox, FlRadioButton, FlToggleSwitch, FlSlider"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Navigation -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnNavigationTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x2194;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Navigation" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlTabView, FlNavigationDrawer, FlBottomSheet"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Layout -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLayoutTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x25A6;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Layout" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlCard, FlExpander, FlCarousel, FlDivider"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Feedback -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFeedbackTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x23F3;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Feedback &amp; Progress" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlProgressBar, FlCircularProgress, FlShimmer, FlToast"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Data Display -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDataDisplayTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x2637;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Data Display" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlDataGrid, FlListView, FlBadge, FlAvatar"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+            <!-- Charts -->
+            <Border
+                StrokeShape="RoundRectangle 8"
+                Stroke="{AppThemeBinding Light=#E0E0E0, Dark=#3D3D3D}"
+                BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2E2E2E}"
+                Padding="16"
+                HeightRequest="80">
+                <Border.Shadow>
+                    <Shadow Offset="0,2" Radius="4" Opacity="0.08" Brush="Black" />
+                </Border.Shadow>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnChartsTapped" />
+                </Border.GestureRecognizers>
+                <HorizontalStackLayout Spacing="16" VerticalOptions="Center">
+                    <Border
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeShape="RoundRectangle 8"
+                        Stroke="Transparent"
+                        BackgroundColor="#FFF3EC">
+                        <Label Text="&#x1F4CA;" FontSize="24" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout VerticalOptions="Center" Spacing="2">
+                        <Label Text="Charts" FontSize="16" FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                        <Label Text="FlCartesianChart, FlCircularChart, FlGauge"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

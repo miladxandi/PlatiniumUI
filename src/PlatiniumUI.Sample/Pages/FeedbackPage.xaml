@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="PlatiniumUI.Sample.Pages.FeedbackPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:feedback="clr-namespace:PlatiniumUI.Fluent.Controls.Feedback;assembly=PlatiniumUI.Fluent"
+    Title="Feedback" BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+            <Label Text="Feedback &amp; Progress" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <!-- Progress Bar -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Progress Bar" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <feedback:FlProgressBar Progress="0.6" />
+                <Label Text="60% Complete" FontSize="12"
+                       TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+            </VerticalStackLayout>
+
+            <!-- Indeterminate Progress -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Indeterminate Progress" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <feedback:FlProgressBar IsIndeterminate="True" />
+            </VerticalStackLayout>
+
+            <!-- Circular Progress -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Circular Progress" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <HorizontalStackLayout Spacing="16">
+                    <feedback:FlCircularProgress IsIndeterminate="True" Size="40" />
+                    <Label Text="Loading..." VerticalOptions="Center"
+                           TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <!-- Shimmer -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Shimmer Loading" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <feedback:FlShimmer IsActive="True" />
+                <BoxView HeightRequest="8" />
+                <feedback:FlShimmer IsActive="True" />
+            </VerticalStackLayout>
+
+            <!-- Toast -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Toast Notification" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <Button Text="Show Toast" Clicked="OnShowToast"
+                        BackgroundColor="{AppThemeBinding Light=#F26522, Dark=#F26522}"
+                        TextColor="White" CornerRadius="8" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PlatiniumUI.Sample.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:PlatiniumUI.Sample.Pages"
+    Title="PlatiniumUI Fluent"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}"
+    Shell.TitleColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}"
+    Shell.ForegroundColor="{AppThemeBinding Light=#F26522, Dark=#F98750}">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:MainPage}"
+        Route="MainPage" />
+
+</Shell>

@@ -1,0 +1,442 @@
+{
+  "note": "Generated from Intl en-u-ca-persian Asia/Tehran; arbiter for the .NET Jalali port.",
+  "parts": [
+    {
+      "gregorianUtcIso": "2023-03-20T12:00:00Z",
+      "tehranWall": "20/03/2023, 15:30:00",
+      "jalali": {
+        "year": 1401,
+        "month": 12,
+        "day": 29
+      }
+    },
+    {
+      "gregorianUtcIso": "2023-03-21T00:00:00Z",
+      "tehranWall": "21/03/2023, 03:30:00",
+      "jalali": {
+        "year": 1402,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2024-03-19T21:00:00Z",
+      "tehranWall": "20/03/2024, 00:30:00",
+      "jalali": {
+        "year": 1403,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2024-03-20T00:00:00Z",
+      "tehranWall": "20/03/2024, 03:30:00",
+      "jalali": {
+        "year": 1403,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2024-03-20T12:00:00Z",
+      "tehranWall": "20/03/2024, 15:30:00",
+      "jalali": {
+        "year": 1403,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-03-20T12:00:00Z",
+      "tehranWall": "20/03/2025, 15:30:00",
+      "jalali": {
+        "year": 1403,
+        "month": 12,
+        "day": 30
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-01-01T00:00:00Z",
+      "tehranWall": "01/01/2025, 03:30:00",
+      "jalali": {
+        "year": 1403,
+        "month": 10,
+        "day": 12
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-06-15T08:30:00Z",
+      "tehranWall": "15/06/2025, 12:00:00",
+      "jalali": {
+        "year": 1404,
+        "month": 3,
+        "day": 25
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-09-23T18:00:00Z",
+      "tehranWall": "23/09/2025, 21:30:00",
+      "jalali": {
+        "year": 1404,
+        "month": 7,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2024-02-29T12:00:00Z",
+      "tehranWall": "29/02/2024, 15:30:00",
+      "jalali": {
+        "year": 1402,
+        "month": 12,
+        "day": 10
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-03-21T12:00:00Z",
+      "tehranWall": "21/03/2025, 15:30:00",
+      "jalali": {
+        "year": 1404,
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "gregorianUtcIso": "2024-12-31T23:59:00Z",
+      "tehranWall": "01/01/2025, 03:29:00",
+      "jalali": {
+        "year": 1403,
+        "month": 10,
+        "day": 12
+      }
+    },
+    {
+      "gregorianUtcIso": "2025-01-01T03:30:00Z",
+      "tehranWall": "01/01/2025, 07:00:00",
+      "jalali": {
+        "year": 1403,
+        "month": 10,
+        "day": 12
+      }
+    },
+    {
+      "gregorianUtcIso": "2022-09-21T20:00:00Z",
+      "tehranWall": "21/09/2022, 23:30:00",
+      "jalali": {
+        "year": 1401,
+        "month": 6,
+        "day": 30
+      }
+    },
+    {
+      "gregorianUtcIso": "2022-03-21T12:00:00Z",
+      "tehranWall": "21/03/2022, 15:30:00",
+      "jalali": {
+        "year": 1401,
+        "month": 1,
+        "day": 1
+      }
+    }
+  ],
+  "monthStarts": [
+    {
+      "jy": 1400,
+      "jm": 1,
+      "gregorianStartUtc": "2021-03-21"
+    },
+    {
+      "jy": 1400,
+      "jm": 2,
+      "gregorianStartUtc": "2021-04-21"
+    },
+    {
+      "jy": 1400,
+      "jm": 3,
+      "gregorianStartUtc": "2021-05-22"
+    },
+    {
+      "jy": 1400,
+      "jm": 4,
+      "gregorianStartUtc": "2021-06-22"
+    },
+    {
+      "jy": 1400,
+      "jm": 5,
+      "gregorianStartUtc": "2021-07-23"
+    },
+    {
+      "jy": 1400,
+      "jm": 6,
+      "gregorianStartUtc": "2021-08-23"
+    },
+    {
+      "jy": 1400,
+      "jm": 7,
+      "gregorianStartUtc": "2021-09-23"
+    },
+    {
+      "jy": 1400,
+      "jm": 8,
+      "gregorianStartUtc": "2021-10-23"
+    },
+    {
+      "jy": 1400,
+      "jm": 9,
+      "gregorianStartUtc": "2021-11-22"
+    },
+    {
+      "jy": 1400,
+      "jm": 10,
+      "gregorianStartUtc": "2021-12-22"
+    },
+    {
+      "jy": 1400,
+      "jm": 11,
+      "gregorianStartUtc": "2022-01-21"
+    },
+    {
+      "jy": 1400,
+      "jm": 12,
+      "gregorianStartUtc": "2022-02-20"
+    },
+    {
+      "jy": 1401,
+      "jm": 1,
+      "gregorianStartUtc": "2022-03-21"
+    },
+    {
+      "jy": 1401,
+      "jm": 2,
+      "gregorianStartUtc": "2022-04-21"
+    },
+    {
+      "jy": 1401,
+      "jm": 3,
+      "gregorianStartUtc": "2022-05-22"
+    },
+    {
+      "jy": 1401,
+      "jm": 4,
+      "gregorianStartUtc": "2022-06-22"
+    },
+    {
+      "jy": 1401,
+      "jm": 5,
+      "gregorianStartUtc": "2022-07-23"
+    },
+    {
+      "jy": 1401,
+      "jm": 6,
+      "gregorianStartUtc": "2022-08-23"
+    },
+    {
+      "jy": 1401,
+      "jm": 7,
+      "gregorianStartUtc": "2022-09-23"
+    },
+    {
+      "jy": 1401,
+      "jm": 8,
+      "gregorianStartUtc": "2022-10-23"
+    },
+    {
+      "jy": 1401,
+      "jm": 9,
+      "gregorianStartUtc": "2022-11-22"
+    },
+    {
+      "jy": 1401,
+      "jm": 10,
+      "gregorianStartUtc": "2022-12-22"
+    },
+    {
+      "jy": 1401,
+      "jm": 11,
+      "gregorianStartUtc": "2023-01-21"
+    },
+    {
+      "jy": 1401,
+      "jm": 12,
+      "gregorianStartUtc": "2023-02-20"
+    },
+    {
+      "jy": 1402,
+      "jm": 1,
+      "gregorianStartUtc": "2023-03-21"
+    },
+    {
+      "jy": 1402,
+      "jm": 2,
+      "gregorianStartUtc": "2023-04-21"
+    },
+    {
+      "jy": 1402,
+      "jm": 3,
+      "gregorianStartUtc": "2023-05-22"
+    },
+    {
+      "jy": 1402,
+      "jm": 4,
+      "gregorianStartUtc": "2023-06-22"
+    },
+    {
+      "jy": 1402,
+      "jm": 5,
+      "gregorianStartUtc": "2023-07-23"
+    },
+    {
+      "jy": 1402,
+      "jm": 6,
+      "gregorianStartUtc": "2023-08-23"
+    },
+    {
+      "jy": 1402,
+      "jm": 7,
+      "gregorianStartUtc": "2023-09-23"
+    },
+    {
+      "jy": 1402,
+      "jm": 8,
+      "gregorianStartUtc": "2023-10-23"
+    },
+    {
+      "jy": 1402,
+      "jm": 9,
+      "gregorianStartUtc": "2023-11-22"
+    },
+    {
+      "jy": 1402,
+      "jm": 10,
+      "gregorianStartUtc": "2023-12-22"
+    },
+    {
+      "jy": 1402,
+      "jm": 11,
+      "gregorianStartUtc": "2024-01-21"
+    },
+    {
+      "jy": 1402,
+      "jm": 12,
+      "gregorianStartUtc": "2024-02-20"
+    },
+    {
+      "jy": 1403,
+      "jm": 1,
+      "gregorianStartUtc": "2024-03-20"
+    },
+    {
+      "jy": 1403,
+      "jm": 2,
+      "gregorianStartUtc": "2024-04-20"
+    },
+    {
+      "jy": 1403,
+      "jm": 3,
+      "gregorianStartUtc": "2024-05-21"
+    },
+    {
+      "jy": 1403,
+      "jm": 4,
+      "gregorianStartUtc": "2024-06-21"
+    },
+    {
+      "jy": 1403,
+      "jm": 5,
+      "gregorianStartUtc": "2024-07-22"
+    },
+    {
+      "jy": 1403,
+      "jm": 6,
+      "gregorianStartUtc": "2024-08-22"
+    },
+    {
+      "jy": 1403,
+      "jm": 7,
+      "gregorianStartUtc": "2024-09-22"
+    },
+    {
+      "jy": 1403,
+      "jm": 8,
+      "gregorianStartUtc": "2024-10-22"
+    },
+    {
+      "jy": 1403,
+      "jm": 9,
+      "gregorianStartUtc": "2024-11-21"
+    },
+    {
+      "jy": 1403,
+      "jm": 10,
+      "gregorianStartUtc": "2024-12-21"
+    },
+    {
+      "jy": 1403,
+      "jm": 11,
+      "gregorianStartUtc": "2025-01-20"
+    },
+    {
+      "jy": 1403,
+      "jm": 12,
+      "gregorianStartUtc": "2025-02-19"
+    },
+    {
+      "jy": 1404,
+      "jm": 1,
+      "gregorianStartUtc": "2025-03-21"
+    },
+    {
+      "jy": 1404,
+      "jm": 2,
+      "gregorianStartUtc": "2025-04-21"
+    },
+    {
+      "jy": 1404,
+      "jm": 3,
+      "gregorianStartUtc": "2025-05-22"
+    },
+    {
+      "jy": 1404,
+      "jm": 4,
+      "gregorianStartUtc": "2025-06-22"
+    },
+    {
+      "jy": 1404,
+      "jm": 5,
+      "gregorianStartUtc": "2025-07-23"
+    },
+    {
+      "jy": 1404,
+      "jm": 6,
+      "gregorianStartUtc": "2025-08-23"
+    },
+    {
+      "jy": 1404,
+      "jm": 7,
+      "gregorianStartUtc": "2025-09-23"
+    },
+    {
+      "jy": 1404,
+      "jm": 8,
+      "gregorianStartUtc": "2025-10-23"
+    },
+    {
+      "jy": 1404,
+      "jm": 9,
+      "gregorianStartUtc": "2025-11-22"
+    },
+    {
+      "jy": 1404,
+      "jm": 10,
+      "gregorianStartUtc": "2025-12-22"
+    },
+    {
+      "jy": 1404,
+      "jm": 11,
+      "gregorianStartUtc": "2026-01-21"
+    },
+    {
+      "jy": 1404,
+      "jm": 12,
+      "gregorianStartUtc": "2026-02-20"
+    }
+  ]
+}

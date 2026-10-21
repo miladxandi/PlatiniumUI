@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="PlatiniumUI.Sample.Pages.ChartsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:charts="clr-namespace:PlatiniumUI.Fluent.Controls.Charts;assembly=PlatiniumUI.Fluent"
+    Title="Charts" BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+            <Label Text="Charts &amp; Data Visualization" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <!-- Bar Chart -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Bar Chart" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <charts:FlCartesianChart x:Name="barChart" ChartType="Bar" HeightRequest="200" />
+            </VerticalStackLayout>
+
+            <!-- Line Chart -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Line Chart" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <charts:FlCartesianChart x:Name="lineChart" ChartType="Line" HeightRequest="200" />
+            </VerticalStackLayout>
+
+            <!-- Pie Chart -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Pie Chart" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <charts:FlCircularChart x:Name="pieChart" ChartType="Pie" />
+            </VerticalStackLayout>
+
+            <!-- Gauge -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Gauge" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <charts:FlGauge Value="75" Min="0" Max="100" />
+                <Label Text="75%" FontSize="12" HorizontalOptions="Center"
+                       TextColor="{AppThemeBinding Light=#7A7A7A, Dark=#A3A3A3}" />
+            </VerticalStackLayout>
+
+            <!-- Spark Chart -->
+            <VerticalStackLayout Spacing="8">
+                <Label Text="Spark Chart" FontSize="16" FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+                <charts:FlSparkChart x:Name="sparkChart" HeightRequest="32" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

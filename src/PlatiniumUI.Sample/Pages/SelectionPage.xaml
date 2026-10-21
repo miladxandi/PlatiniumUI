@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PlatiniumUI.Sample.Pages.SelectionPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fl="clr-namespace:PlatiniumUI.Fluent.Controls.Selection;assembly=PlatiniumUI.Fluent"
+    Title="Selection"
+    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#1A1A1A}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24" Spacing="24">
+
+            <!-- CheckBox -->
+            <Label Text="FlCheckBox" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlCheckBox Text="Unchecked" IsChecked="False" />
+            <fl:FlCheckBox Text="Checked" IsChecked="True" />
+            <fl:FlCheckBox Text="Indeterminate" IsIndeterminate="True" />
+            <fl:FlCheckBox Text="Disabled" IsEnabled="False" />
+
+            <!-- RadioButton -->
+            <Label Text="FlRadioButton" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlRadioButton Text="Option A" GroupName="demo" IsSelected="True" />
+            <fl:FlRadioButton Text="Option B" GroupName="demo" />
+            <fl:FlRadioButton Text="Option C" GroupName="demo" />
+
+            <!-- Toggle Switch -->
+            <Label Text="FlToggleSwitch" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlToggleSwitch Text="Wi-Fi" IsToggled="True" />
+            <fl:FlToggleSwitch Text="Bluetooth" IsToggled="False" />
+            <fl:FlToggleSwitch Text="Disabled" IsEnabled="False" />
+
+            <!-- Slider -->
+            <Label Text="FlSlider" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlSlider Value="0.5" Minimum="0" Maximum="1" />
+
+            <!-- Rating -->
+            <Label Text="FlRating" FontSize="20" FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#1A1A1A, Dark=#FFFFFF}" />
+
+            <fl:FlRating Value="3" MaxValue="5" />
+            <fl:FlRating Value="4" MaxValue="7" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
